@@ -19,8 +19,8 @@ public class PrimeNumbers {
 	public static ArrayList<Integer> listPrimes(int n)
 	{
 		ArrayList<Integer> rval = new ArrayList<Integer>();
-		if(n > 2)
-			rval.add(2);
+		for (int count = 2; count < n; count++)
+			rval.add(count);
 		return rval;
 	}
 }
