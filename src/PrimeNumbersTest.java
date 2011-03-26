@@ -51,9 +51,9 @@ public class PrimeNumbersTest
 	}
 	
 	@Test
-	public void test325115()
+	public void testBigNumber()
 	{
-		assertEquals(list(5,7,7,1327), PrimeNumbers.generatePrimes(325115));
+		assertEquals(list(5, 7, 7, 1327), PrimeNumbers.generatePrimes(325115));
 	}
 	
 	public ArrayList<Integer> list(int... ints)
