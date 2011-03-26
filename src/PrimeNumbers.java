@@ -6,7 +6,7 @@ public class PrimeNumbers {
 	public static ArrayList<Integer> generatePrimes(int n)
 	{
 		ArrayList<Integer> rval = new ArrayList<Integer>();
-		for (int factor = 2; n > 1; factor++)
+		for(int factor = 2; n > 1; factor++)
 		{
 			for(; n % factor == 0; n /= factor)
 			{
@@ -19,8 +19,11 @@ public class PrimeNumbers {
 	public static ArrayList<Integer> listPrimes(int n)
 	{
 		ArrayList<Integer> rval = new ArrayList<Integer>();
-		for (int count = 2; count < n; count++)
-			rval.add(count);
+		for(int count = 2; count < n; count++)
+		{
+			if(count == 2 || count % 2 != 0)
+				rval.add(count);
+		}
 		return rval;
 	}
 }
