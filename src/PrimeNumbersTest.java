@@ -38,6 +38,12 @@ public class PrimeNumbersTest
 		assertEquals(list(2, 3), PrimeNumbers.generatePrimes(6));
 	}
 	
+	@Test
+	public void testEight()
+	{
+		assertEquals(list(2,2,2), PrimeNumbers.generatePrimes(8));
+	}
+	
 	public ArrayList<Integer> list(int... ints)
 	{
 		ArrayList<Integer> items = new ArrayList<Integer>();
