@@ -88,6 +88,12 @@ public class PrimeNumbersTest
 		assertEquals(list(2, 3, 5), PrimeNumbers.listPrimes(6));
 	}
 	
+	@Test
+	public void testListPrimesSeven()
+	{
+		assertEquals(list(2, 3, 5), PrimeNumbers.listPrimes(7));
+	}
+	
 	public ArrayList<Integer> list(int... ints)
 	{
 		ArrayList<Integer> items = new ArrayList<Integer>();
