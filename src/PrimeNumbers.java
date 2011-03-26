@@ -8,7 +8,7 @@ public class PrimeNumbers {
 		ArrayList<Integer> rval = new ArrayList<Integer>();
 		if(n > 1)
 		{
-			rval.add(2);
+			rval.add(n);
 		}
 		return rval;
 	}
