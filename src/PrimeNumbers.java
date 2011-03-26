@@ -6,11 +6,15 @@ public class PrimeNumbers {
 	public static ArrayList<Integer> generatePrimes(int n)
 	{
 		ArrayList<Integer> rval = new ArrayList<Integer>();
-		while(n % 2 == 0)
+		for (int factor = 2; n > 1; factor++)
 		{
-			rval.add(2);
-			n /= 2;
+			while (n % factor == 0)
+			{
+				rval.add(factor);
+				n /= factor;
+			}
 		}
+		
 		if(n > 1)
 		{
 			rval.add(n);
