@@ -15,4 +15,10 @@ public class PrimeNumbers {
 		}
 		return rval;
 	}
+	
+	public static ArrayList<Integer> listPrimes(int n)
+	{
+		
+		return new ArrayList<Integer>();
+	}
 }
