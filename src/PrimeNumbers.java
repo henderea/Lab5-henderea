@@ -21,7 +21,7 @@ public class PrimeNumbers {
 		ArrayList<Integer> rval = new ArrayList<Integer>();
 		for(int count = 2; count < n; count++)
 		{
-			if(count == 2 || count % 2 != 0)
+			if(generatePrimes(count).size() == 1)
 				rval.add(count);
 		}
 		return rval;
