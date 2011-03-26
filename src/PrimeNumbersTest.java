@@ -100,6 +100,12 @@ public class PrimeNumbersTest
 		assertEquals(list(2, 3, 5, 7), PrimeNumbers.listPrimes(10));
 	}
 	
+	@Test
+	public void testListPrimesTwentyFive()
+	{
+		assertEquals(list(2, 3, 5, 7, 11, 13, 17, 19, 23), PrimeNumbers.listPrimes(25));
+	}
+	
 	public ArrayList<Integer> list(int... ints)
 	{
 		ArrayList<Integer> items = new ArrayList<Integer>();
