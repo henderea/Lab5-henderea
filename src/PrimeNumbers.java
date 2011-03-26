@@ -8,16 +8,10 @@ public class PrimeNumbers {
 		ArrayList<Integer> rval = new ArrayList<Integer>();
 		for (int factor = 2; n > 1; factor++)
 		{
-			while (n % factor == 0)
+			for(; n % factor == 0; n /= factor)
 			{
 				rval.add(factor);
-				n /= factor;
 			}
-		}
-		
-		if(n > 1)
-		{
-			rval.add(n);
 		}
 		return rval;
 	}
